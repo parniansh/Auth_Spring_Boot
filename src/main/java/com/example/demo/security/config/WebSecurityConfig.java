@@ -19,6 +19,7 @@ public class WebSecurityConfig {
 
     private final AppUserService appUserService;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
@@ -37,10 +38,6 @@ public class WebSecurityConfig {
 
                         }
                 );
-
-
-
-
         return http.build();
     }
 
@@ -53,8 +50,6 @@ public class WebSecurityConfig {
 
         return Provider;
     }
-
-
 
 
 }
